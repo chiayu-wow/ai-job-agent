@@ -35,6 +35,34 @@ src/main/java/com/example/aijobagent/
     └── AgentResponse.java
 ```
 
+## Flow
+
+```
+User Input (skills + job title + location)
+    ↓
+AgentController - receives HTTP request
+    ↓
+AgentService - orchestrates the agent loop
+    ↓                    ↓
+JobSearchTool      ResumeAnalyzerTool
+    ↓                    ↓
+JSearch API          GroqService
+                         ↓
+                    Groq API (LLaMA 3)
+
+Result: Ranked job list with match analysis
+```
+
+## Each Component
+
+| Component | Responsibility |
+|---|---|
+| AgentController | Receive HTTP request |
+| AgentService | Orchestrate tools, manage loop |
+| JobSearchTool | Search jobs via JSearch API |
+| ResumeAnalyzerTool | Analyze job fit via Groq |
+| GroqService | Call Groq LLM API |
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
