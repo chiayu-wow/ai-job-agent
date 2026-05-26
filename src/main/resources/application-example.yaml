@@ -1,6 +1,7 @@
 groq:
   api:
-    key: keyyy
+    key: your-groq-api-key-here
+
 spring:
   application:
     name: ai-job-agent
