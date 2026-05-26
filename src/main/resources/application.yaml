@@ -1,6 +1,0 @@
-groq:
-  api:
-    key: keyyy
-spring:
-  application:
-    name: ai-job-agent
