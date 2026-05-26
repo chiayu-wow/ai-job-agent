@@ -5,3 +5,7 @@ groq:
 spring:
   application:
     name: ai-job-agent
+jsearch:
+  api:
+    key: your-key
+    host: jsearch.p.rapidapi.com
