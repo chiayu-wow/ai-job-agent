@@ -32,3 +32,16 @@ build/
 ### VS Code ###
 .vscode/
 src/main/resources/application.yaml
+
+.DS_Store
+**/.DS_Store
+
+
+.idea/
+*.iml
+.vscode/
+bin/
+
+
+target/
+*.log
